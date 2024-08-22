@@ -25,6 +25,8 @@ jobs:
         run: |
           pip install pytest
           pytest test-example/
+        env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
       
           
       
