@@ -1,1 +1,8 @@
 wandb
+scikit-learn
+fastai
+pandas
+numpy
+torch
+torchvision
+ipython
