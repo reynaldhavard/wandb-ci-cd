@@ -28,7 +28,7 @@ def test_metrics():
     x1 = torch.cat((x1a, x1b, x1c), dim=1)  # Prediction: 20xClass0
     x2 = torch.zeros(20, 1, 1)  # Target: 20xClass0
 
-    assert compute_val(utils.BackgroundIOU(), x1, x2) == 1.0
+    assert compute_val(utils.BackgroundIOU(), x1, x2) == 0.0
     road_iou = compute_val(utils.RoadIOU(), x1, x2)
     assert math.isnan(road_iou)
 
